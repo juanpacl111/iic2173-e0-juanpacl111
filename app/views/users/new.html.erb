@@ -1,0 +1,6 @@
+<% if current_user %>
+  <% controller.redirect_to rooms_path %>
+<% end %>
+
+
+<%= render 'form', user: @user %>

@@ -1,0 +1,9 @@
+<%= form_with(model: user, local: true) do |form| %>
+
+  <div class="actions">
+    <%= form.label :nickname %>
+    <%= form.text_field :nickname %>
+
+    <%= form.submit "Entrar" %>
+  </div>
+<% end %>

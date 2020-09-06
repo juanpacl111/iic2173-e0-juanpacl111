@@ -1,0 +1,8 @@
+<%= form_with(url: login_path, scope: :session, local: true) do |form| %>
+  <div class="actions">
+    <%= form.label :nickname %>
+    <%= form.text_field :nickname %>
+
+    <%= form.submit "Log in"%>
+  </div>
+<% end %>
